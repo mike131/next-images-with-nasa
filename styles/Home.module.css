@@ -119,10 +119,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 50px;
-  grid-row-gap: 0px;
+  grid-row-gap: 20px;
 }
-@media (max-width: 600px) {
-  .grid {
+@media (max-width: 800px) {
+  .gridContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: column;
   }

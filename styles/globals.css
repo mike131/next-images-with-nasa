@@ -9,6 +9,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  text-align: center;
 }
 
 * {
@@ -30,7 +31,7 @@ a {
 
 .Imagecontainer {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 2rem;
   justify-content: center;
   align-content: center;
 }
@@ -38,7 +39,7 @@ a {
 .searchButton {
   transition-duration: 0.4s;
   width: 50%;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem;
   background-color: white;
   color: black;
