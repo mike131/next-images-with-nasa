@@ -35,8 +35,8 @@
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
 @media (max-width: 800px) {
@@ -57,11 +57,11 @@
 }
 
 .fade {
-  animation: fadeIn ease 15s;
-  -webkit-animation: fadeIn ease 15s;
-  -moz-animation: fadeIn ease 15s;
-  -o-animation: fadeIn ease 15s;
-  -ms-animation: fadeIn ease 15s;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
 }
 @keyframes fadeIn {
   0% {
