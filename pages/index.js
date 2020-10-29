@@ -24,7 +24,7 @@ export default function Home({ items }) {
           placeholder="Search for an image"
         ></input>
         <button
-          className="searchButton"
+          className="button"
           disabled={search === ""}
           onClick={async () => {
             const results = await fetch(

@@ -18,8 +18,10 @@ export default function photo({ photo }) {
         )}
       </div>
       <div className="Imagecontainer">
-        <Link className="nasaId" href="/">
-          <a className="nasaId">Go home</a>
+        <Link className="homeButton" href="/">
+          <a className="homeButton">
+            <button className="button">Go home</button>
+          </a>
         </Link>
       </div>
     </div>
