@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+import Image from "next/image";
 import ImagePreview from "../components/ImagePreview";
 import styles from "../styles/Home.module.css";
 
@@ -35,15 +36,17 @@ export default function Home({ items }) {
         >
           Find
         </button>
-        <div className={styles.gridContainer}>
-          {photos &&
-            photos.map((preview) => (
-              <ImagePreview
-                key={preview.data[0].nasa_id}
-                thumbnailUrl={preview.links[0].href}
-                nasaId={preview.data[0].nasa_id}
-              />
-            ))}
+        <div className={styles.fade}>
+          <div className={styles.gridContainer}>
+            {photos &&
+              photos.map((preview) => (
+                <ImagePreview
+                  key={preview.data[0].nasa_id}
+                  thumbnailUrl={preview.links[0].href}
+                  nasaId={preview.data[0].nasa_id}
+                />
+              ))}
+          </div>
         </div>
       </main>
     </div>
